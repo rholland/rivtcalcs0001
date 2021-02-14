@@ -22,7 +22,7 @@
         "command": "insertDateString.insertDate"
     },
     {
-        "key": "ctrl+alt+b",
+        "key": "ctrl+alt+v",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus",
         "args": {
@@ -178,10 +178,5 @@
         "key": "ctrl+shift+2",
         "command": "-autoDocstring.generateDocstring",
         "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+v",
-        "command": "workbench.action.tasks.runTask",
-        "args": "displaypdf"
     },
 ]
