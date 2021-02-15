@@ -2,13 +2,11 @@
 # %%
 import rivtlib.rv_lib as rv
 
-rv.D("none", "default", "Carport Seismic Model", "37")
+rv.D("pdf", "default", "Carport Seismic Model", "37")
 
 rv.I("""[01]  Carport Weight
 
     Carport weight
-    
-    
     
 
     """)
