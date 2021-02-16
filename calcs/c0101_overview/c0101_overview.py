@@ -1,7 +1,7 @@
 #! python
 # %%
 import rivtlib.rv_lib as rv
-rv.D("pdf", "default", "Overview - Residence Renovations", "1")
+rv.D("dev", "default", "Overview - Residence Renovations", "1")
 # %%
 rv.R("""[01]_ Summary
     
@@ -102,3 +102,5 @@ rv.I("""[06]_  Math and Text Abbreviations
     || text | abbrev_all.txt | raw
 
     """)
+
+# %%
