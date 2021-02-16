@@ -1,4 +1,3 @@
-# comment
 # %%
 import rivtlib.rv_lib as rv
 
@@ -6,8 +5,7 @@ rv.D("pdf", "default", "Carport Wind Model", "1")
 
 rv.I("""[01] Carport Unit Loads and Weight
 
-    Roof unit dead loads _[t]
-
+    Roof unit dead loads [t]_
     [literal]_                                        
     ==========  =======  =========  =================================
     variable      value    [value]  description
@@ -28,23 +26,35 @@ rv.V(""" Carport Weight
     roofdl1 = 9.0           | PSF, KPA | unit load 
 
     Weight of carport [e]_
-    cp_wt = cp_width * cp_length * 9.0*PSF | KIPS, KN            
-    
+    cp_wt = cp_width * cp_length * .009*KSF | KIPS, KN             
     """)
 
 rv.V("""[02] Wind loads
 
-    uplift_max = 2.7        | KIPS, KN | nominal maximum wind uplift
+    Wind Force Values [t]_
+    uplift_max = 2.8        | KIPS, KN | nominal maximum wind uplift
 
-    Uplift DC ratio  - OK [e]_
+    Uplift DC ratio [e]_
     dc1 = uplift_max / (.9*cp_wt)          | DC
+
+
+    Mecca Wind Model Results [t]_
+    || text | wind_pressures3.html | html
+     """)
+rv.V("""[03] MeccaWind Output
 
 
     Mecca Wind Model Results [t]_
     || text | wind_pressures3.html | html
 
 
+    || image | fig2.png,fig3.png | .4,.4
+    Wind load geometry - 90 deg [f]_
+    Wind load orientation - 180 deg [f]_
+    
+    || image | winda180.png,windb180.png | .4,.4
+    Positive wind load pressures [f]_
+    Negative wind load pressures [f]_
      """)
-
 
 # %%
